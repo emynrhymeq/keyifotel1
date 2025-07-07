@@ -261,6 +261,41 @@ footer {
   color: #0c0fca;
 }
 
+@media (max-width: 768px) {
+  #hakkimizda,
+  #iletisim {
+    width: calc(100% - 40px); /* Mobilde kenarlardan 20px boşluk */
+    padding: 15px 20px;
+  }
+
+  #hakkimizda h2,
+  #iletisim h2 {
+    font-size: 1.5rem;
+  }
+
+  #hakkimizda ul li {
+    font-size: 1rem;
+    padding-left: 20px;
+  }
+
+  #iletisim p {
+    font-size: 1rem;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .gallery {
+    grid-template-columns: 1fr; /* Galeride tek sütun */
+    gap: 10px;
+  }
+
+  .gallery img {
+    max-width: 100%;
+    aspect-ratio: 4/3;
+  }
+}
+
+
 #hakkimizda ul li:hover {
   background-color: rgba(0, 255, 0, 0.1);
 }
